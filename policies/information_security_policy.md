@@ -8,10 +8,12 @@ This policy applies to all employees, contractors, and third parties with access
 
 ## Responsibilities
 - Management: Provide resources for information security.
-- Employees: Follow security requirements and report incidents.
+- Employees: Follow security requirements and report incidents. 
 - Security Team: Maintain policies and monitor compliance.
 
 ## Requirements
 - Access to systems must be protected with strong authentication.
 - Sensitive data must be encrypted at rest and in transit.
 - Security incidents must be reported within 24 hours.
+- All employees must complete security awareness training annually.
+
