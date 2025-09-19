@@ -10,8 +10,7 @@ The goal is to show how GRC can scale through engineering practices — bridging
 
 Cyber GRC professional moving into GRC Engineering.
 
-Background: vendor risk, ISO 27001, NIST CSF, board reporting, compliance leadership.
-
+Background: Third-Party Risk Management, Cyber Controls Testing and Assurance, Cyber KPI and Executive/Board-level Reporting
 Current focus: Policy as Code, Evidence Automation, CI/CD Controls, and GitHub/GitLab Integration.
 
 🗂 Curriculum Roadmap
