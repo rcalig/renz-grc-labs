@@ -1,0 +1,17 @@
+{
+  "ISO27001:2022_A.5.1": {
+    "control_name": "Information Security Policies",
+    "mapped_to": "NIST CSF GV-1: Establish and Maintain Governance",
+    "ci_cd_stage_relevance": "Planning / Build stage (policies inform how pipelines are secured)"
+  },
+  "ISO27001:2022_A.8.3": {
+    "control_name": "Access Control Management",
+    "mapped_to": "NIST CSF PR.AC: Access Control",
+    "ci_cd_stage_relevance": "Merge Request Approvals & Protected Branches"
+  },
+  "ISO27001:2022_A.12.6": {
+    "control_name": "Technical Vulnerability Management",
+    "mapped_to": "NIST CSF PR.IP-12: Vulnerability Management",
+    "ci_cd_stage_relevance": "Security stage (SAST, DAST, Dependency Scans)"
+  }
+}
