@@ -2,16 +2,51 @@
   "ISO27001:2022_A.5.1": {
     "control_name": "Information Security Policies",
     "mapped_to": "NIST CSF GV-1: Establish and Maintain Governance",
-    "ci_cd_stage_relevance": "Planning / Build stage (policies inform how pipelines are secured)"
+    "ci_cd_stage_relevance": "Planning / Build stage (policies guide secure pipeline design)"
+  },
+  "ISO27001:2022_A.5.15": {
+    "control_name": "Access Control Policy",
+    "mapped_to": "NIST CSF PR.AC-1: Identities and Credentials are Managed",
+    "ci_cd_stage_relevance": "Merge Request Approvals & Protected Branches"
   },
   "ISO27001:2022_A.8.3": {
     "control_name": "Access Control Management",
-    "mapped_to": "NIST CSF PR.AC: Access Control",
-    "ci_cd_stage_relevance": "Merge Request Approvals & Protected Branches"
+    "mapped_to": "NIST CSF PR.AC-3: Remote Access is Managed",
+    "ci_cd_stage_relevance": "Developer authentication to GitLab, approval workflows"
+  },
+  "ISO27001:2022_A.8.9": {
+    "control_name": "Configuration Management",
+    "mapped_to": "NIST CSF PR.IP-1: Baselines are Established and Maintained",
+    "ci_cd_stage_relevance": "Build stage (enforce config policies via IaC scans)"
   },
   "ISO27001:2022_A.12.6": {
     "control_name": "Technical Vulnerability Management",
     "mapped_to": "NIST CSF PR.IP-12: Vulnerability Management",
-    "ci_cd_stage_relevance": "Security stage (SAST, DAST, Dependency Scans)"
+    "ci_cd_stage_relevance": "Security stage (SAST, DAST, Dependency scans in GitLab)"
+  },
+  "ISO27001:2022_A.8.15": {
+    "control_name": "Logging",
+    "mapped_to": "NIST CSF DE.AE-3: Event Data is Collected and Correlated",
+    "ci_cd_stage_relevance": "GitLab Runner logs and CI job artifacts as audit evidence"
+  },
+  "ISO27001:2022_A.8.16": {
+    "control_name": "Monitoring Activities",
+    "mapped_to": "NIST CSF DE.CM-7: Monitoring for Unauthorized Activity",
+    "ci_cd_stage_relevance": "Security stage (alerts from scans, pipeline failures)"
+  },
+  "ISO27001:2022_A.8.28": {
+    "control_name": "Secure Development Lifecycle",
+    "mapped_to": "NIST CSF PR.IP-3: Secure Development Processes",
+    "ci_cd_stage_relevance": "Test stage (automated unit tests + security testing)"
+  },
+  "ISO27001:2022_A.8.32": {
+    "control_name": "Change Management",
+    "mapped_to": "NIST CSF PR.IP-11: Change Control Processes",
+    "ci_cd_stage_relevance": "Merge Request workflow (approvals before deploy)"
+  },
+  "ISO27001:2022_A.8.34": {
+    "control_name": "Separation of Development, Test, and Production",
+    "mapped_to": "NIST CSF PR.DS-5: Segregation of Duties",
+    "ci_cd_stage_relevance": "Environment-specific deployments (review apps, staging, production)"
   }
 }
