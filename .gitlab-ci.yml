@@ -1,0 +1,17 @@
+stages:
+  - security
+
+k8s_policy_check:
+  stage: security
+  image: ghcr.io/open-policy-agent/conftest:latest
+  script:
+    - echo "Running Conftest against Kubernetes manifest..."
+    - conftest --version
+    - conftest test k8s/deployment.yaml | tee conftest-result.txt
+  artifacts:
+    when: always
+    paths:
+      - conftest-result.txt
+  rules:
+    - if: '$CI_PIPELINE_SOURCE == "merge_request_event"'
+      when: on_success
