@@ -1,4 +1,6 @@
-package s3.policy
+package s3
+
+default deny := []
 
 deny[msg] if {
   input.public == true
