@@ -17,39 +17,18 @@ Current focus: Policy as Code, Evidence Automation, CI/CD Controls, and GitHub/G
 
 This repo is structured as a week-by-week set of labs, moving from beginner → expert level.
 
-**Phase 1 – Foundations (Beginner)**
-
-Week 1: GitHub setup, GitLab hello-world pipeline, InfoSec policy doc
-
-Week 2: Map ISO 27001 → NIST CSF controls, link to CI/CD stages
-
-Week 3: Git workflows, merge request approvals, protected branches
-
-**Phase 2 – Automating Controls (Intermediate)**
-
-Week 4: Policy as Code (IAM JSON, GitLab CI context)
-
-Week 5: OPA/Rego basics, local checks + runner integration
-
-Week 6: Terraform + OPA in review/staging/prod
-
-Week 7: Evidence collection (AWS CLI + GitLab Security Dashboard)
-
-**Phase 3 – Automation & Dashboards (Advanced)**
-
-Week 8: Automated evidence with GitHub/GitLab Actions
-
-Week 9: Compliance dashboards (Python + GitLab Security outputs)
-
-Week 10: Vendor risk automation (JSON schema + CI/CD scan evidence)
-
-**Phase 4 – Expert Level (GRC in Practice)**
-
-Week 11: Control specifications embedded in CI/CD pipelines
-
-Week 12: Multi-framework mapping (ISO ↔ NIST ↔ CIS ↔ GitLab evidence)
-
-Week 13: Evidence normalization (multi-cloud + GitLab artifacts)
-
-Week 14: Final project: mini GRC automation platform
+Week 1 – Git/GitHub basics, repo setup, first policy
+Week 2 – GitLab intro, branches, merge requests
+Week 3 – Branch protection, approvals, governance
+Week 4 – AWS IAM JSON policies, least privilege
+Week 5 – OPA install, Rego basics, deny S3 public
+Week 6 – Kubernetes policies, block insecure configs
+Week 7 – GitLab pipeline, Conftest, compliance gates
+Week 8 – Multi-file scans, merge blocking
+Week 9 – Terraform plan checks, IaC governance
+Week 10 – Secrets scanning, prevent hardcoded creds
+Week 11 – Evidence collection, GitLab Security Dashboard
+Week 12 – Map policies to ISO 27001, NIST CSF
+Week 13 – Reports, pass/fail trends, stakeholder value
+Week 14 – Advanced policy-as-code, Gatekeeper, Kyverno
 
