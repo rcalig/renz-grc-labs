@@ -14,8 +14,8 @@ spec:
     spec:
       containers:
         - name: web
-          image: nginx:1.25.3      # ✅ good: pinned tag
+          image: nginx:latest     # ❌ bad: floating 'latest' tag
           securityContext:
-            privileged: false      # ✅ good: not privileged
+            privileged: true      # ❌ bad: privileged container
           ports:
             - containerPort: 80
