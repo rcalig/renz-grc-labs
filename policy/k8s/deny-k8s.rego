@@ -9,7 +9,7 @@ deny[msg] {
 
 # Deny if any container is privileged
 deny[msg] {
-  cont := input.spec.template.spec.containers[_]
-  cont.securityContext.privileged == true
-  msg := sprintf("Container %q has privileged=true (not allowed).", [cont.name])
+  container := input.spec.template.spec.containers[_]
+  container.securityContext.privileged == true
+  msg := sprintf("Container %q has privileged=true (not allowed).", [container.name])
 }
